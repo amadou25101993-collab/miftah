@@ -1,0 +1,99 @@
+<h2 class="sr-only">Explorateur de l'appareil vocal : 13 parties de la bouche et de la gorge, de la trachée aux lèvres, avec leur rôle en arabe, en français et en anglais, et une animation du trajet du son par la bouche ou par le nez.</h2>
+<style>
+@font-face{font-family:'UNaskhB';src:url('https://cdn.jsdelivr.net/gh/nuqayah/qpc-fonts@master/various-woff2/UthmanTN1B%20Ver10.woff2') format('woff2')}
+.ar{font-family:'UNaskhB',serif;font-size:17px}
+.rw{display:flex;gap:8px;padding:6px 0;border-top:0.5px solid var(--border);font-size:14px;line-height:1.55}
+.rw b{font-weight:500;min-width:74px;flex-shrink:0;color:var(--text-secondary)}
+.hl{opacity:0;transition:opacity .25s}
+</style>
+<div style="display:flex;align-items:center;gap:8px;margin:0 0 8px">
+<button id="pv" aria-label="Partie précédente"><i class="ti ti-chevron-left" aria-hidden="true"></i></button>
+<select id="sel" style="flex:1"></select>
+<button id="nx" aria-label="Partie suivante"><i class="ti ti-chevron-right" aria-hidden="true"></i></button>
+</div>
+<svg width="100%" viewBox="0 0 380 335" role="img"><title>Coupe de la tête</title><desc>Coupe latérale de la tête montrant la trachée, le larynx, la gorge, le palais, la langue, les dents, les lèvres et le nez.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<g transform="translate(40,0)">
+<path d="M130 30 Q100 38 96 64 L78 102 L96 112" fill="none" stroke="#888780" stroke-width="1.5"/>
+<path d="M100 90 Q160 76 238 92 L242 112 Q170 106 106 116 Z" fill="#E6F1FB" stroke="#85B7EB" stroke-width="1"/>
+<path d="M92 166 Q88 204 122 216 L200 238" fill="none" stroke="#888780" stroke-width="1.5"/>
+<path d="M252 96 Q264 170 260 325" fill="none" stroke="#888780" stroke-width="2.5"/>
+<path d="M228 240 L232 325" fill="none" stroke="#888780" stroke-width="2"/>
+<path d="M104 121 Q146 104 202 111" fill="none" stroke="#B4B2A9" stroke-width="5" stroke-linecap="round"/>
+<path id="velum" d="M202 111 Q228 114 236 138" fill="none" stroke="#ED93B1" stroke-width="5" stroke-linecap="round"/>
+<circle id="uvula" cx="236" cy="145" r="4" fill="#ED93B1"/>
+<path d="M104 158 Q108 146 130 140 Q180 128 214 140 Q236 152 238 178 Q236 210 230 232 L200 236 Q150 202 108 176 Z" fill="#F0997B" stroke="#D85A30" stroke-width="1"/>
+<path d="M230 234 Q244 222 246 240" fill="none" stroke="#D85A30" stroke-width="1.5"/>
+<ellipse cx="82" cy="131" rx="10" ry="7" fill="#ED93B1"/><ellipse cx="82" cy="158" rx="10" ry="7" fill="#ED93B1"/>
+<path d="M96 122 L103 122 L102 142 L95 140 Z" fill="#F1EFE8" stroke="#888780" stroke-width="1"/>
+<path d="M95 148 L102 146 L104 166 L97 166 Z" fill="#F1EFE8" stroke="#888780" stroke-width="1"/>
+<line x1="232" y1="264" x2="258" y2="264" stroke="#D85A30" stroke-width="2"/>
+<g id="h0" class="hl"><rect x="235" y="272" width="22" height="52" rx="4" fill="#EF9F27" opacity="0.55"/></g>
+<g id="h1" class="hl"><ellipse cx="245" cy="264" rx="17" ry="8" fill="#EF9F27" opacity="0.6"/></g>
+<g id="h2" class="hl"><path d="M230 234 Q244 222 246 240" fill="none" stroke="#EF9F27" stroke-width="6" stroke-linecap="round"/></g>
+<g id="h3" class="hl"><path d="M240 120 L254 120 L259 258 L236 258 Z" fill="#EF9F27" opacity="0.5"/><line x1="262" y1="165" x2="272" y2="165" stroke="#854F0B" stroke-width="1.5"/><line x1="264" y1="212" x2="274" y2="212" stroke="#854F0B" stroke-width="1.5"/><line x1="264" y1="252" x2="274" y2="252" stroke="#854F0B" stroke-width="1.5"/></g>
+<g id="h4" class="hl"><circle cx="236" cy="145" r="8" fill="none" stroke="#EF9F27" stroke-width="3"/></g>
+<g id="h5" class="hl"><path d="M202 111 Q228 114 236 138" fill="none" stroke="#EF9F27" stroke-width="7" stroke-linecap="round" opacity="0.8"/></g>
+<g id="h6" class="hl"><path d="M100 90 Q160 76 238 92 L242 112 Q170 106 106 116 Z" fill="#EF9F27" opacity="0.5"/></g>
+<g id="h7" class="hl"><ellipse cx="172" cy="126" rx="58" ry="8" fill="#EF9F27" opacity="0.55"/><rect x="241" y="132" width="11" height="116" rx="5" fill="#EF9F27" opacity="0.45"/></g>
+<g id="h8" class="hl"><path d="M104 158 Q108 146 130 140 Q180 128 214 140 Q236 152 238 178 Q236 210 230 232 L200 236 Q150 202 108 176 Z" fill="none" stroke="#EF9F27" stroke-width="4"/></g>
+<g id="h9" class="hl"><path d="M104 121 Q146 104 202 111" fill="none" stroke="#EF9F27" stroke-width="7" stroke-linecap="round" opacity="0.85"/></g>
+<g id="h10" class="hl"><ellipse cx="108" cy="122" rx="9" ry="5" fill="#EF9F27" opacity="0.75"/></g>
+<g id="h11" class="hl"><path d="M96 122 L103 122 L102 142 L95 140 Z M95 148 L102 146 L104 166 L97 166 Z" fill="#EF9F27" opacity="0.75"/></g>
+<g id="h12" class="hl"><ellipse cx="82" cy="131" rx="12" ry="9" fill="none" stroke="#EF9F27" stroke-width="3"/><ellipse cx="82" cy="158" rx="12" ry="9" fill="none" stroke="#EF9F27" stroke-width="3"/></g>
+<g id="vib" opacity="0"><path d="M234 276 l4 -4 l4 4 l4 -4 l4 4 l4 -4" fill="none" stroke="#E24B4A" stroke-width="1.5"/></g>
+<g id="outO" opacity="0"><line x1="70" y1="145" x2="36" y2="145" stroke="#378ADD" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow)"/></g>
+<g id="outN" opacity="0"><line x1="90" y1="104" x2="52" y2="104" stroke="#378ADD" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow)"/></g>
+<circle id="air" cx="245" cy="322" r="5" fill="#378ADD" opacity="0"/>
+</g>
+</svg>
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:4px 0 6px">
+<button id="po"><i class="ti ti-player-play" aria-hidden="true"></i> Son par la bouche</button>
+<button id="pn"><i class="ti ti-player-play" aria-hidden="true"></i> Son par le nez</button>
+</div>
+<p id="cap" style="font-size:13px;color:var(--text-secondary);min-height:20px;margin:0 0 10px">Lance une animation pour suivre l'air des poumons jusqu'à la sortie.</p>
+<div style="background:var(--surface-1);border-radius:12px;padding:12px 14px">
+<div id="N" style="font-size:17px;font-weight:500"></div>
+<div id="S" style="font-size:13px;color:var(--text-secondary);margin-bottom:6px"></div>
+<div class="rw"><b>Quoi</b><span id="Q"></span></div>
+<div class="rw"><b>Rôle</b><span id="R"></span></div>
+<div class="rw"><b>Arabe</b><span id="A"></span></div>
+<div class="rw"><b>Français</b><span id="F"></span></div>
+<div class="rw"><b>Anglais</b><span id="E"></span></div>
+<div class="rw"><b>Piège</b><span id="P" style="color:var(--text-danger)"></span></div>
+</div>
+<script>
+const P=[
+['Trachée','Windpipe · <span class="ar">القصبة الهوائية</span>','Le tube qui amène l\'air des poumons vers la gorge.','Elle fournit le souffle : sans air, aucun son.','Aucune lettre ne s\'y forme, mais tout le souffle des lettres et du madd en vient.','Même rôle.','Même rôle.','Manquer de souffle raccourcit le madd : apprends à respirer aux bons arrêts (waqf).'],
+['Larynx et cordes vocales','Larynx, vocal folds · <span class="ar">الحنجرة</span>','Deux petits replis au fond de la gorge qui s\'ouvrent, se ferment ou vibrent.','S\'ils vibrent, la voix sonne (jahr). S\'ils restent ouverts, l\'air passe en souffle (hams). S\'ils se ferment d\'un coup, le son est coupé.','La hamza <span class="ar">ء</span> (fermeture) et le ha <span class="ar">هـ</span> (souffle) s\'y forment. Ils décident aussi si une lettre est sonore : <span class="ar">د</span> contre <span class="ar">ت</span>, <span class="ar">ز</span> contre <span class="ar">س</span>.','b/p, d/t, v/f et z/s ne diffèrent que par cette vibration. Le « h » ne se prononce pas.','Mêmes paires. Le « h » de « house » est proche du <span class="ar">هـ</span>, et la coupure de « uh-oh » ressemble à la hamza.','Les francophones oublient le <span class="ar">هـ</span> et avalent la hamza.'],
+['Épiglotte','Epiglottis · <span class="ar">لسان المزمار</span>','Un petit clapet qui ferme la trachée quand on avale.','Il ne forme aucune lettre : il protège les voies respiratoires.','Il sert seulement de repère : <span class="ar">ع ح</span> se forment à peu près à sa hauteur.','Aucun rôle dans les sons.','Aucun rôle dans les sons.','—'],
+['Gorge (pharynx)','Pharynx · <span class="ar">الحلق</span>','Le couloir derrière la langue, découpé en trois étages : bas, milieu et haut.','En se resserrant, elle crée des frottements et des sons profonds.','Bas : <span class="ar">ء هـ</span> · milieu : <span class="ar">ع ح</span> · haut : <span class="ar">غ خ</span>.','Le « r » parisien se forme près du haut de la gorge et ressemble au <span class="ar">غ</span>. Rien au milieu de la gorge.','Aucun son de gorge. Le « ch » écossais de « loch » est proche du <span class="ar">خ</span>.','<span class="ar">ح</span> devient « h » ou « kh », et <span class="ar">ع</span> est remplacé par un simple « a ». Ce sont les deux lettres à travailler en priorité.'],
+['Luette','Uvula · <span class="ar">اللهاة</span>','La petite pointe de chair qui pend au fond du palais.','Elle marque la limite entre la bouche et la gorge.','Le <span class="ar">ق</span> se forme juste devant elle, avec l\'arrière de la langue. <span class="ar">غ خ</span> se forment juste en dessous.','Le « r » français se forme souvent près de la luette.','Pas utilisée.','Confondre <span class="ar">ق</span> et <span class="ar">ك</span> : le <span class="ar">ق</span> est plus profond, près de la luette.'],
+['Voile du palais','Soft palate · <span class="ar">الحنك الرخو</span>','La partie molle à l\'arrière du palais, qui peut monter ou descendre.','Monté, il ferme le nez : le son sort par la bouche. Baissé, l\'air passe aussi par le nez.','<span class="ar">ق</span> et <span class="ar">ك</span> s\'y appuient. Il s\'abaisse pour la ghunna (<span class="ar">نّ مّ</span>).','Il s\'abaisse pour « an, on, in ». k et g s\'y forment.','k, g et « ng » (sing) s\'y forment.','Nasaliser les voyelles arabes : « Ramadan » dit à la française. En arabe, seule la ghunna passe par le nez.'],
+['Fosses nasales','Nasal cavity · <span class="ar">الخيشوم</span>','L\'espace au-dessus du palais, qui s\'ouvre sur les narines.','Il fait résonner les sons nasaux.','La ghunna du <span class="ar">ن</span> et du <span class="ar">م</span>, surtout avec shadda, dans l\'ikhfa et dans l\'idgham avec ghunna.','Voyelles nasales, m, n et « gn ».','m, n et « ng ».','Test simple : pince le nez. Sur une ghunna, le son s\'étouffe ; sur une lettre normale, rien ne change.'],
+['Cavité (al-jawf)','Oral cavity · <span class="ar">الجوف</span>','L\'espace vide de la bouche et de la gorge.','C\'est la caisse de résonance des voyelles.','Les voyelles longues <span class="ar">ا و ي</span> (madd) sortent de ce vide, sans point d\'appui.','Voyelles courtes et stables.','Voyelles qui glissent souvent (« go » se dit « gô-ou »).','Les francophones raccourcissent le madd ; les anglophones le font glisser. Il doit rester stable, sur au moins 2 temps.'],
+['Langue','Tongue · <span class="ar">اللسان</span>','Un muscle en 5 zones : racine, arrière, milieu, bords et pointe.','C\'est l\'organe qui forme le plus de lettres. En se soulevant vers le palais, elle épaissit le son.','18 lettres : <span class="ar">ق ك ج ش ي ض ل ن ر ط د ت ص س ز ظ ذ ث</span>. Son arrière se soulève pour les lettres épaisses <span class="ar">خ ص ض غ ط ق ظ</span>.','La plupart des consonnes, mais la langue ne se soulève jamais pour épaissir le son.','La plupart des consonnes. Le « r » se forme sans toucher le palais.','<span class="ar">ص ض ط ظ</span> prononcés comme <span class="ar">س د ت ذ</span>. Indice : la voyelle qui suit une lettre épaisse doit sonner plus sombre.'],
+['Palais dur','Hard palate · <span class="ar">الحنك الصلب</span>','La voûte osseuse du haut de la bouche.','Il sert d\'appui au milieu et au dos de la langue.','<span class="ar">ج ش ي</span> s\'y forment. Le dos de la langue s\'y plaque pour <span class="ar">ص ض ط ظ</span>.','« ch » (chat) proche du <span class="ar">ش</span>, « y » (yeux) proche du <span class="ar">ي</span>.','« sh » proche du <span class="ar">ش</span>, « j » de « jam » proche du <span class="ar">ج</span>, « y » proche du <span class="ar">ي</span>.','Dire <span class="ar">ج</span> comme le « j » de « jour » : il faut un petit « d » au début (dj).'],
+['Gencives (alvéoles)','Gum ridge · <span class="ar">اللثة</span>','La petite bosse de gencive juste derrière les incisives du haut.','C\'est le point d\'appui de la pointe de la langue.','<span class="ar">ل ن ر</span> s\'y forment.','l et n s\'y forment, mais pas le « r », qui est dans la gorge.','t, d, l et n s\'y forment. Le « r » ne touche rien.','<span class="ar">ر</span> dit dans la gorge (à la française) ou sans contact (à l\'anglaise). Il doit toucher la gencive, sans rouler plusieurs fois.'],
+['Dents','Teeth · <span class="ar">الأسنان</span>','Les incisives devant, puis les canines, les prémolaires et les molaires au fond.','Ce sont des surfaces de contact pour la langue et la lèvre inférieure.','Base des incisives : <span class="ar">ط د ت</span> · bord des incisives : <span class="ar">ظ ذ ث</span> · près des incisives du bas : <span class="ar">ص س ز</span> · molaires : <span class="ar">ض</span> · avec la lèvre : <span class="ar">ف</span>.','t, d, s, z et f utilisent les dents. Pas de « th ».','« th » de « think » proche du <span class="ar">ث</span>, « th » de « this » proche du <span class="ar">ذ</span>. t et d se forment plus en arrière, sur la gencive.','Remplacer <span class="ar">ث</span> par « s » et <span class="ar">ذ</span> par « z ». La pointe de la langue doit toucher le bord des dents.'],
+['Lèvres','Lips · <span class="ar">الشفتان</span>','La sortie de la bouche.','Elles se ferment, s\'arrondissent ou touchent les dents.','<span class="ar">ب م</span> (fermées), <span class="ar">و</span> (arrondies), <span class="ar">ف</span> (avec les incisives). Elles s\'arrondissent pour la damma.','b, p, m, f, v et « ou ».','b, p, m, f, v et w.','Arrondir les lèvres sur une lettre épaisse avec fatha (« ṭa » devient « to ») : la fatha reste ouverte.']];
+const $=id=>document.getElementById(id),sel=$('sel');let cur=0;
+P.forEach((p,i)=>{const o=document.createElement('option');o.value=i;o.textContent=(i+1)+'. '+p[0];sel.appendChild(o)});
+function show(i){cur=(i+P.length)%P.length;sel.value=cur;const p=P[cur];
+$('N').textContent=p[0];$('S').innerHTML=p[1];$('Q').innerHTML=p[2];$('R').innerHTML=p[3];$('A').innerHTML=p[4];$('F').innerHTML=p[5];$('E').innerHTML=p[6];$('P').innerHTML=p[7];
+P.forEach((_,k)=>$('h'+k).style.opacity=k==cur?1:0)}
+sel.onchange=()=>show(+sel.value);$('pv').onclick=()=>show(cur-1);$('nx').onclick=()=>show(cur+1);show(0);
+const base=[[245,322,0,'L\'air monte des poumons par la trachée'],[245,264,1,'Les cordes vocales vibrent : la voix naît'],[247,200,3,'Le son traverse la gorge'],[244,142,4,'Il arrive au niveau de la luette']];
+const oral=base.concat([[190,124,7,'Voile levé : le son entre dans la bouche'],[120,134,8,'La langue, le palais et les dents lui donnent sa forme'],[80,145,12,'Il sort par les lèvres']]);
+const nasal=base.concat([[238,100,5,'Voile baissé : le son monte vers le nez'],[160,96,6,'Il résonne dans les fosses nasales (ghunna)'],[96,106,6,'Il sort par les narines']]);
+const vel=['M202 111 Q228 114 236 138','M202 111 Q220 128 224 152'];let anim=null;
+function run(pts,nas){if(anim)cancelAnimationFrame(anim);$('velum').setAttribute('d',vel[nas?1:0]);$('uvula').setAttribute('cx',nas?224:236);$('uvula').setAttribute('cy',nas?158:145);
+['outO','outN'].forEach(id=>$(id).setAttribute('opacity',0));const a=$('air');a.setAttribute('opacity',1);
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;const seg=900;let t0=null;
+function step(ts){if(!t0)t0=ts;let e=reduce?seg*(pts.length-1):ts-t0;let k=Math.min(Math.floor(e/seg),pts.length-2);let f=Math.min((e-k*seg)/seg,1);
+const p=pts[k],q=pts[k+1];a.setAttribute('cx',p[0]+(q[0]-p[0])*f);a.setAttribute('cy',p[1]+(q[1]-p[1])*f);
+const cp=f<0.5?p:q;$('cap').textContent=cp[3];show(cp[2]);$('vib').setAttribute('opacity',k>=1?1:0);
+if(e<seg*(pts.length-1))anim=requestAnimationFrame(step);else{a.setAttribute('opacity',0);$(nas?'outN':'outO').setAttribute('opacity',1)}}
+anim=requestAnimationFrame(step)}
+$('po').onclick=()=>run(oral,false);$('pn').onclick=()=>run(nasal,true);
+</script>
