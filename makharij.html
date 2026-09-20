@@ -1,0 +1,116 @@
+< h2  class =" sr-only " > Explorateur des makharij : choisis une lettre arabe pour voir son point de sortie sur un schéma en coupe de la bouche, avec ses caractéristiques de voix, de sortie du son et d'épaisseur. </h2>​​
+< style >
+@font-face { font-family : 'UNaskhB' ; src : url ( 'https://cdn.jsdelivr.net/gh/nuqayah/qpc-fonts@master/various-woff2/UthmanTN1B%20Ver10.woff2' ) format ( 'woff2' )}
+.ar { font-family : 'UNaskhB' , serif }
+.rw { display : flex; gap : 8px ; padding : 6px 0  ; border - top : 0.5px solid var ( -- border ); font -size : 14px ; line -height : 1.5 }
+.rw b  { font-weight : 500 ; min-width : 92 px ; color : var ( --text-secondary ) }
+.chip { display : inline-block; font -size : 12px ; padding : 2px 8px  ; border-radius : var ( -- radius ); background : var ( -- bg -accent ); color : var ( -- text-accent ) ; margin : 2px 4px 0 0 }   
+@media ( prefers-reduced-motion : no-preference) { #pulse { animation : pl 1.4 s ease -in-out infinite; transform-box : fill-box; transform-origin : center } @keyframes pl { 50 % { transform : scale ( 1.5 ); opacity : .15 } } }
+</ style >
+< div  style =" display:flex;align-items:center;gap:8px;margin:0 0 10px " >
+< bouton  id =" pv " aria-label =" Lettre précédente " > < i  class =" ti ti-chevron-right " aria-hidden =" true " > </ i > </ bouton >
+< select  id =" sel " style = " flex : 1 " > </select>
+< bouton  id =" nx " aria-label =" Lettre suivante " > < i  class =" ti ti-chevron-left " aria-hidden =" true " > </ i > </ bouton >
+</ div >
+< svg  width =" 100% " viewBox =" 0 0 380 300 " role =" img " > < title > Coupe de la bouche </ title > < desc > Schéma latéral de la tête avec le point de sortie de la lettre choisie. </desc>​​
+<defs> < marker id =" arrow " viewBox =" 0 0 10 10 " refX =" 8 " refY =" 5 " markerWidth =" 6 " markerHeight =" 6 " orient =" auto-start-reverse " > < path d = " M2 1L8 5L2 9 " fill = " none " stroke =" context-stroke " stroke-width =" 1.5 " stroke-linecap =" round " stroke -linejoin =" round " / > </marker> </defs>  
+< g  transform =" translate(40,0) " >
+< path  d =" M130 30 Q100 38 96 64 L78 102 L96 112 " fill =" none " stroke =" #888780 " stroke-width =" 1.5 " />
+< path  d =" M100 90 Q160 76 238 92 L242 112 Q170 106 106 116 Z " fill =" #E6F1FB " stroke =" #85B7EB " stroke-width =" 1 " />
+< path  d =" M92 166 Q88 204 122 216 L200 238 " fill =" none " stroke =" #888780 " stroke-width =" 1.5 " />
+< path  d =" M252 96 Q264 170 260 292 " fill =" none " stroke =" #888780 " stroke-width =" 2.5 " />
+< path  d =" M228 240 L232 292 " fill =" none " stroke =" #888780 " stroke-width =" 2 " />
+< path  d =" M104 121 Q146 104 202 111 " fill =" none " stroke =" #B4B2A9 " stroke-width =" 5 " stroke-linecap =" round " />
+< path  d =" M202 111 Q228 114 236 138 " fill =" none " stroke =" #ED93B1 " stroke-width =" 5 " stroke-linecap =" round " />
+< cercle  cx =" 236 " cy =" 145 " r =" 4 " fill =" #ED93B1 " />
+< g  id =" jawf " opacity =" 0 " > < ellipse  cx =" 172 " cy =" 126 " rx =" 58 " ry =" 8 " fill =" #FAC775 " opacity =" 0.8 " /> < rect  x =" 241 " y =" 132 " width =" 11 " height =" 116 " rx =" 5 " fill =" #FAC775 " opacity =" 0.8 " /> </ g >
+< path  d =" M104 158 Q108 146 130 140 Q180 128 214 140 Q236 152 238 178 Q236 210 230 232 L200 236 Q150 202 108 176 Z " fill =" #F0997B " stroke =" #D85A30 " stroke-width =" 1 " />
+< path  d =" M230 234 Q244 222 246 240 " fill =" none " stroke =" #D85A30 " stroke-width =" 1.5 " />
+< ellipse  cx =" 82 " cy =" 131 " rx =" 10 " ry =" 7 " fill =" #ED93B1 " /> < ellipse  cx =" 82 " cy =" 158 " rx =" 10 " ry =" 7 " fill =" #ED93B1 " />
+< path  d =" M96 122 L103 122 L102 142 L95 140 Z " fill =" #F1EFE8 " stroke =" #888780 " stroke-width =" 1 " />
+< path  d =" M95 148 L102 146 L104 166 L97 166 Z " fill =" #F1EFE8 " stroke =" #888780 " stroke-width =" 1 " />
+< ligne  x1 =" 232 " y1 =" 264 " x2 =" 258 " y2 =" 264 " trait =" #D85A30 " largeur-trait =" 2 " />
+< g  id =" vib " opacity =" 0 " > < path  d =" M236 272 l4 -4 l4 4 l4 -4 l4 4 l4 -4 " fill =" none " stroke =" #E24B4A " stroke-width =" 1.5 " /> </ g >
+< g  id =" air " opacity =" 0 " > < line  x1 =" 76 " y1 =" 145 " x2 =" 44 " y2 =" 145 " stroke =" #378ADD " stroke-width =" 1.5 " stroke-dasharray =" 4 3 " marker-end =" url(#arrow) " /> </ g >
+< g  id =" nez " opacité =" 0 " > < ligne  x1 =" 96 " y1 =" 104 " x2 =" 56 " y2 =" 104 " trait =" #378ADD " largeur-trait =" 1.5 " trait-trait-carré =" 4 3 " fin-marqueur =" url(#arrow) " /> </ g >
+< g  id =" up " opacity =" 0 " > < line  x1 =" 196 " y1 =" 178 " x2 =" 196 " y2 =" 146 " stroke =" #854F0B " stroke-width =" 2 " marker-end =" url(#arrow) " /> </ g >
+< circle  id =" pulse " cx =" 100 " cy =" 140 " r =" 10 " fill =" #EF9F27 " opacity =" 0.45 " />
+< circle  id =" dot " cx =" 100 " cy =" 140 " r =" 4.5 " fill =" #A32D2D " />
+</ g >
+</svg>​​
+< div  style =" display:flex;flex-wrap:wrap;gap:4px 12px;font-size:12px;color:var(--text-secondary);margin:2px 0 12px " >
+< span > < span  style =" color:#E24B4A " > ∿ </ span > voix qui vibre </ span > < span > < span  style =" color:#378ADD " > ⇢ </ span > sortie d'air </ span > < span > < span  style =" color:#854F0B " > ↑ </ span > langue apportée </ span >
+</ div >
+< div  id =" carte " style =" background:var(--surface-1);border-radius:12px;padding:12px 14px " >
+< div  style =" display:flex;align-items:center;gap:14px;margin-bottom:6px " >
+< div  id =" L " class =" ar " style =" font-size:52px;line-height:1.2;color:var(--text-primary);min-width:56px;text-align : center " > </div>
+<div> < div id = " N " style =" font - size:17px ; font-weight:500 " > </div> < div id = " G " style = " font - size :13px;color:var( -- text-secondary) " > </div> </div>  
+</ div >
+< div  class = " rw " > <b> Point </b> < span id = " P " > </span> </div>​​​​​​ 
+< div  class = " rw " > <b> La bouche </b> < span id = " D " > </span> </div>​​​​​ 
+< div  class = " rw " > <b> Voix </b> < span id = " V " > </span> </div>​​​​​​ 
+< div  class = " rw " > <b> Sortie du son </b> < span id = " F " > </span> </div>​​​​ 
+< div  class =" rw " > < b > Épaisseur </ b > < span  id =" E " > </ span > </ div >
+< div  class =" rw " > < b > Autres sifat </ b > < span  id =" X " > </ span > </ div >
+</ div >
+< script >
+const  M = { jawf : [ 'Al-Jawf · الجوف' , 'Le vide de la bouche et de la gorge, sans point d'appui précis : le son dure tant que l'air sort' , null ] ,
+aqsa : [ 'Al-Halq · الحلق' , 'Fond de la gorge, la partie la plus basse (côté poitrine)' , [ 245 , 264 ] ] ,
+wasat : [ 'Al-Halq · الحلق' , 'Milieu de la gorge' , [ 246 , 214 ] ] ,
+adna : [ 'Al-Halq · الحلق' , 'Haut de la gorge, la partie la plus proche de la bouche' , [ 246 , 168 ] ] ,
+q : [ 'Al-Lisan · اللسان' , 'Extrême arrière de la langue contre le palais mou situé au-dessus' , [ 224 , 134 ] ] ,
+k : [ 'Al-Lisan · اللسان' , 'Arrière de la langue, un peu plus en avant et plus bas que le qaf, contre le palais' , [ 204 , 127 ] ] ,
+milieu : [ 'Al-Lisan · اللسان' , 'Milieu de la langue contre le palais dur' , [ 162 , 122 ] ] ,
+papa : [ 'Al-Lisan · اللسان' , 'Un bord de la langue (ou les deux) contre les molaires supérieures' , [ 182 , 128 ] ] ,
+lam : [ 'Al-Lisan · اللسان' , 'Bords avant de la langue jusqu'à la pointe, contre la gencive des dents supérieures' , [ 121 , 131 ] ] ,
+religieuse : [ 'Al-Lisan · اللسان' , 'Pointe de la langue contre la gencive des incisives supérieures, un peu sous le point du lam' , [ 110 , 133 ] ] ,
+ra : [ 'Al-Lisan · اللسان' , 'Pointe de la langue avec un peu de son dos, contre la gencive des incisives supérieures, légèrement plus en arrière que le noun' , [ 115 , 127 ] ] ,
+nat : [ 'Al-Lisan · اللسان' , 'Pointe de la langue contre la base (racine) des incisives supérieures' , [ 104 , 125 ] ] ,
+asal : [ 'Al-Lisan · اللسان' , 'Pointe de la langue près de la face interne des incisives inférieures, avec un léger espace sous les supérieures' , [ 101 , 152 ] ] ,
+lith : [ 'Al-Lisan · اللسان' , 'Pointe de la langue contre le bord des incisives supérieures' , [ 99 , 141 ] ] ,
+fa : [ 'Ash-Shafatan · الشفتان' , 'Intérieur de la lèvre inférieure contre le bord des incisives supérieures' , [ 90 , 147 ] ] ,
+lèvres : [ 'Ash-Shafatan · الشفتان' , 'Entre les deux lèvres' , [ 80 , 144 ] ] ,
+khay : [ 'Al-Khayshum · الخيشوم' , 'Les fosses nasales' , [ 165 , 99 ] ] } ;
+const  T = [ [ 'ا' , 'Alif (madd)' , 'jawf' , 'J' , 'R' , 'V' , [ 'Khafa\'' ] , 'Bouche ouverte, langue basse : le son coule librement depuis la gorge. L'alif prend l'épaisseur ou la finesse de la lettre qui le précède. ] ,
+[ 'ب' , 'Ba' , 'lips' , 'J' , 'S' , 'F' , [ 'Idhlaq' , 'Qalqala' ] , 'Les deux lèvres se ferment complètement puis s'ouvrent d'un coup. Au soukoun, le son rebondit. ] ,
+[ 'ت' , 'Ta' , 'nat' , 'H' , 'S' , 'F' , [ ] , 'La pointe de la langue se colle à la base des incisives supérieures puis se détache ; son bloqué suivi d\'un léger soufflé.' ] ,
+[ 'ث' , 'Tha' , 'lith' , 'H' , 'R' , 'F' , [ ] , 'La pointe de la langue touche légèrement le bord des incisives supérieures ; L'air passe en continu, sans vibration. ] ,
+[ 'ج' , 'Jim' , 'mid' , 'J' , 'S' , 'F' , [ 'Qalqala' ] , 'Le milieu de la langue se colle au palais dur ; son bloqué et vibré, qui rebondit au soukoun.' ] ,
+[ 'ح' , 'Ḥa' , 'wasat' , 'H' , 'R' , 'F' , [ ] , 'Le milieu de la gorge se resserre sans se fermer ; l'air frotte en passant, comme un souffle sur une vitre. ] ,
+[ 'خ' , 'Kha' , 'adna' , 'H' , 'R' , 'E' , [ ] , 'Le haut de la gorge se resserre et l\'arrière de la langue monte ; l\'air frotte, sans vibration.' ] ,
+[ 'د' , 'Dal' , 'nat' , 'J' , 'S' , 'F' , [ 'Qalqala' ] , 'Même point que le ta, mais la voix vibre ; au soukoun, le son rebondit. ] ,
+[ 'ذ' , 'Dhal' , 'lith' , 'J' , 'R' , 'F' , [ ] , 'Même point que le tha, mais la voix vibre pendant que le son continue de passer.' ] ,
+[ 'ر' , 'Ra' , 'ra' , 'J' , 'T' , 'V' , [ 'Idhlaq' , 'Inhiraf' , 'Takrir' ] , 'Son à moitié retenu. On garde la langue stable pour ne pas rouler le ra plusieurs fois. Épais ou fin selon sa voyelle et son contexte.' ] ,
+[ 'ز' , 'Zay' , 'asal' , 'J' , 'R' , 'F' , [ 'Safir' ] , 'La pointe de la langue s'approche des incisives inférieures ; l'air siffle et la voix vibre. ] ,
+[ 'س' , 'Sin' , 'asal' , 'H' , 'R' , 'F' , [ 'Safir' ] , 'Même point que le zay : l\'air siffle, sans vibration de la voix.' ] ,
+[ 'ش' , 'Shin' , 'mid' , 'H' , 'R' , 'F' , [ 'Tafashshi' ] , 'Le milieu de la langue s'approche du palais sans le toucher ; l'air se diffuse dans toute la bouche. ] ,
+[ 'ص' , 'Ṣad' , 'asal' , 'H' , 'R' , 'E' , [ 'Itbaq' , 'Safir' ] , 'Même point que le sin, mais le dos de la langue se soulève et se plaque vers le palais ; sifflement épais.' ] ,
+[ 'ض' , 'Ḍad' , 'dad' , 'J' , 'R' , 'E' , [ 'Itbaq' , 'Istitala' ] , 'Le bord de la langue s'appuie sur les molaires supérieures, le dos se soulève ; le son s'allonge le long du bord de la langue. ] ,
+[ 'ط' , 'Ṭa' , 'nat' , 'J' , 'S' , 'E' , [ 'Itbaq' , 'Qalqala' ] , 'Même point que le ta, mais le dos de la langue se plaque contre le palais : c\'est la lettre la plus forte. Rebondit au soukoun. ] ,
+[ 'ظ' , 'Ẓa' , 'lith' , 'J' , 'R' , 'E' , [ 'Itbaq' ] , 'Même point que le dhal, mais le dos de la langue se soulève vers le palais ; son épais et vibré.' ] ,
+[ 'ع' , 'ʿAyn' , 'wasat' , 'J' , 'T' , 'F' , [ ] , 'Le milieu de la gorge se resserre et la voix vibre ; le son est à moitié retenu. ] ,
+[ 'غ' , 'Ghayn' , 'adna' , 'J' , 'R' , 'E' , [ ] , 'Même point que le kha, mais la voix vibre ; l\'arrière de la langue monte.' ] ,
+[ 'ف' , 'Fa' , 'fa' , 'H' , 'R' , 'F' , [ 'Idhlaq' ] , 'L\'intérieur de la lèvre inférieure touche le bord des incisives supérieures ; L'air s'échappe en souffle. ] ,
+[ 'ق' , 'Qaf' , 'q' , 'J' , 'S' , 'E' , [ 'Qalqala' ] , 'L\'extrême arrière de la langue se colle au palais mou puis se détacher ; son bloqué et épais, qui rebondit au soukoun.' ] ,
+[ 'ك' , 'Kaf' , 'k' , 'H' , 'S' , 'F' , [ ] , 'L\'arrière de la langue se colle au palais, plus en avant que le qaf ; son bloqué puis léger soufflé.' ] ,
+[ 'ل' , 'Lam' , 'lam' , 'J' , 'T' , 'V' , [ 'Idhlaq' , 'Inhiraf' ] , 'Le son passe par les côtés de la langue. Épais seulement dans le nom « Allah » après fatha ou damma.' ] ,
+[ 'م' , 'Mim' , 'lips' , 'J' , 'T' , 'F' , [ 'Idhlaq' , 'Ghunna' ] , 'Les deux lèvres se ferment ; le son résonne dans le nez. ] ,
+[ 'ن' , 'Noun' , 'nun' , 'J' , 'T' , 'F' , [ 'Idhlaq' , 'Ghunna' ] , 'La pointe de la langue touche la gencive ; le son résonne aussi dans le nez.' ] ,
+[ 'هـ' , 'Ha' , 'aqsa' , 'H' , 'R' , 'F' , [ 'Khafa\'' ] , 'Même point que la hamza, sans fermeture : un souffle doux et discret sort librement de la gorge.' ] ,
+[ 'و' , 'Waw' , 'lips' , 'J' , 'R' , 'F' , [ 'Lin (sakin après fatha)' ] , 'Consonne : les lèvres s'arrondissent et s'avancent sans se fermer. Voyelle longue (sakin après damma) : le son vient du jawf.' ] ,
+[ 'ي' , 'Ya' , 'mid' , 'J' , 'R' , 'F' , [ 'Lin (sakin après fatha)' ] , 'Consonne : le milieu de la langue s'approche du palais. Voyelle longue (sakin après kasra) : le son vient du jawf.' ] ,
+[ 'ء' , 'Hamza' , 'aqsa' , 'J' , 'S' , 'F' , [ ] , 'Le fond de la gorge se ferme complètement puis s'ouvre d'un coup ; son net et coupé. ] ,
+[ 'نّ مّ' , 'Ghunna' , 'khay' , '-' , '-' , '-' , [ ] , 'Le son nasal du noun et du mim, surtout avec shadda. Si on pince le nez, la ghunna s'arrête. ] ] ;
+const  VV = { J : 'Jahr : la voix vibre' , H : 'Hams : l\'air s\'échappe avec le son' , '-' : '—' } , FF = { S : 'Shidda : son bloqué' , T : 'Tawassut : son à moitié retenu' , R : 'Rakhawa : son qui coule' , '-' : '—' } , EE = { E : 'Épaisse (istiʿla)' , F : 'Fine (istifal)' , V : 'Variable selon le contexte' , '-' : '—' } ;
+const  sel = document.getElementById ( ' sel ' ) ; T.forEach ( ( t , i ) = > { const o = document.createElement ( ' option ' ) ; o.value = i ; o.textContent = t [ 0 ] + ' · ' + t [ 1 ] ; sel.appendChild ( o ) } ) ;​​​​​ 
+let  cur = 1 ; const  $ = id => document . getElementById ( id ) ;
+fonction  afficher ( i ) { cur = ( i + T . longueur ) % T . longueur ; const  t = T [ cur ] , m = M [ t [ 2 ] ] ; sel . valeur = cur ;
+$ ( 'L' ) . textContent = t [ 0 ] ; $ ( 'N' ) . textContent = t [ 1 ] ; $ ( 'G' ) . textContent = m [ 0 ] ; $ ( 'P' ) . textContent = m [ 1 ] ; $ ( 'D' ) . textContent = t [ 7 ] ;
+$ ( 'V' ) . texteContenu = VV [ t [ 3 ] ] ; $ ( 'F' ) . texteContent = FF [ t [ 4 ] ] ; $ ( 'E' ) . textContent = EE [ t [ 5 ] ] ;
+$ ( ' X ' ) . innerHTML = t [ 6 ] .length ? t [ 6 ] .map ( s => '<span class="chip">' + s + ' </span>' ) .join ( '' ) : ' —' ;
+const  p = m [ 2 ] ; [ 'pulse' , 'dot' ] . forEach ( id => { $ ( id ) .setAttribute ( 'opacity' , p ? ( id == ' pulse' ? 0.45 : 1 ) : 0 ) ; if ( p ) { $ ( id ) .setAttribute ( 'cx' , p [ 0 ] ) ; $ ( id ) .setAttribute ( ' cy ' , p [ 1 ] ) } } ) ;
+$ ( 'jawf' ) . setAttribute ( 'opacity' , t [ 2 ] == 'jawf' ? 1 : 0 ) ; $ ( 'vib' ) . setAttribute ( 'opacity' , t [ 3 ] == 'J' ? 1 : 0 ) ;
+$ ( 'air' ) . setAttribute ( 'opacité' , t [ 3 ] == ' H' ? 1 : 0 ) ; $ ( 'nose' ) . setAttribute ( 'opacité' , ( t [ 6 ] .includes ( 'Ghunna' ) || t [ 2 ] == 'khay' ) ? 1 : 0 ) ;
+$ ( 'up' ) . setAttribute ( 'opacity' , t [ 5 ] == 'E' ? 1 : 0 ) }
+sel.onchange = ( ) => afficher ( + sel.value ) ; $ ( 'pv' ) . onclick = ( ) = > afficher ( cur - 1 ) ; $ ( ' nx ' ) . onclick = ( ) = > afficher ( cur + 1 ) ; afficher ( 1 ) ;
+</script>
